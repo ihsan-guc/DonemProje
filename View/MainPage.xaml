@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DonemProje.View.MainPage"
+             Title="Maps Table of Contents"
+             Padding="10"
+             xmlns:local="clr-namespace:DonemProje.View">
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection>
+                <TextCell Text="Pins"
+                          Detail="Add a pin to a map."
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:PinPage}" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>

@@ -7,7 +7,7 @@ namespace DonemProje
         public App()
         {
             InitializeComponent();
-            MainPage = new DonemProje.View.Map();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DonemProje.View.Map.xaml", "View/Map.xaml", typeof(global::DonemProje.View.Map))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DonemProje.View.PinPage.xaml", "View/PinPage.xaml", typeof(global::DonemProje.View.PinPage))]
 
 namespace DonemProje.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Map.xaml")]
-    public partial class Map : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\PinPage.xaml")]
+    public partial class PinPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Maps.Map MyMap;
+        private global::Xamarin.Forms.Maps.Map map;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Map));
-            MyMap = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Maps.Map>(this, "MyMap");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PinPage));
+            map = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Maps.Map>(this, "map");
         }
     }
 }
