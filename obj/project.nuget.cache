@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "p/tNiOQ+kQwFPIe7Mf9pLipfWBqWmqZHR1j8c6BH/WLzOa+3W9JvWS+dKkj5HBSUVTTudQpQH3opIcrvNL3fAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\EysanGuc\\source\\repos\\DonemProje\\DonemProje\\DonemProje\\DonemProje.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EysanGuc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\EysanGuc\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\EysanGuc\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\EysanGuc\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\EysanGuc\\.nuget\\packages\\xamarin.forms\\4.5.0.617\\xamarin.forms.4.5.0.617.nupkg.sha512",
+    "C:\\Users\\EysanGuc\\.nuget\\packages\\xamarin.forms.maps\\4.5.0.617\\xamarin.forms.maps.4.5.0.617.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="DonemProje.View.Map">
+    <Grid>
+        <map:Map x:Name="MyMap" MapType="Street" HasZoomEnabled="True">
+            <map:Map.ItemTemplate>
+                <DataTemplate>
+                    <map:Pin Position="{Binding Position}"
+                              Address="{Binding Address}"
+                              Label="{Binding PlaceName}" />
+                </DataTemplate>
+            </map:Map.ItemTemplate>
+        </map:Map>
+    </Grid>
+</ContentPage>

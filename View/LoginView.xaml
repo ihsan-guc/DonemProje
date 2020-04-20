@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DonemProje.View.LoginView" x:Name="loginView">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="20" VerticalOptions="Center">
+            <Entry Text="{Binding UserName}" TextColor="Black" Placeholder="UserName"></Entry>
+            <Entry Text="{Binding Password}" TextColor="Black" Placeholder="Password" IsPassword="True"></Entry>
+            <Button Text="Giriş" Command="{Binding Path=BindingContext.LoginIn
+                ,Source={x:Reference loginView}}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

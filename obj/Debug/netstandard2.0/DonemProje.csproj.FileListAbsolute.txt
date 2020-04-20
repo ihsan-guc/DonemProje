@@ -1,0 +1,15 @@
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\bin\Debug\netstandard2.0\DonemProje.deps.json
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\bin\Debug\netstandard2.0\DonemProje.dll
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\bin\Debug\netstandard2.0\ref\DonemProje.dll
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\bin\Debug\netstandard2.0\DonemProje.pdb
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\LoginView.xaml.g.cs
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.AssemblyInfoInputs.cache
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.AssemblyInfo.cs
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.dll
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\ref\DonemProje.dll
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.pdb
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.csprojAssemblyReference.cache
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\Map.xaml.g.cs
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.csproj.CoreCompileInputs.cache
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\XamlC.stamp
