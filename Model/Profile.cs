@@ -1,14 +1,12 @@
-﻿using Xamarin.Forms.Maps;
+﻿using System.Collections.Generic;
+using Xamarin.Forms.Maps;
 
 namespace DonemProje.Model
 {
     public class Profile
     {
-        public string Name { get; set; }
-        public string surname { get; set; }
-        public string City { get; set; }
-        public double lat { get; set; }
-        public double lon { get; set; }
-        public Position Position{ get; set; }
+        public string Message { get; set; }
+        public string success { get; set; }
+        public IList<string> data { get; set; }
     }
 }
