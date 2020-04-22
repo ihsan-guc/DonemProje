@@ -1,12 +1,15 @@
 ﻿using DonemProje.Model;
+using DonemProje.View;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -20,25 +23,28 @@ namespace DonemProje.ViewModel
             loginIn = new Command(LoginControl);
         }
         private string username;
-
         public string UserName
         {
             get { return username; }
             set { username = value; }
         }
         private string password;
-
         public string Password
         {
             get { return password; }
             set { password = value; }
         }
         private ICommand loginIn;
-
         public ICommand LoginIn
         {
             get { return loginIn; }
             set { loginIn = value; }
+        }
+        private string error;
+        public string Error
+        {
+            get { return error; }
+            set { error = value; OnpropertyChanged(); }
         }
         static async Task<string> PostURI(Uri u, HttpContent c)
         {
@@ -57,8 +63,8 @@ namespace DonemProje.ViewModel
         {
             var login = new Login()
             {
-                username = "mobil",
-                password = "mobiluygulamagelistirme",
+                username = username,
+                password = password /*"mobiluygulamagelistirme",*/
             };
             Uri u = new Uri("http://yusufozgul.com:8282/login");
             var json = JsonConvert.SerializeObject(login);
@@ -67,15 +73,50 @@ namespace DonemProje.ViewModel
             t.Wait();
             if (t.Result.ToString() == "")
             {
-                App.Current.MainPage.DisplayAlert("Message", "username veya password yanlış", "Ok");
+                Error = "Username ya da Şifre Yanlış...";
             }
             else
             {
+                JObject Jsonparse = JObject.Parse(t.Result);
                 string jsondata = JsonConvert.SerializeObject(t.Result);
-                var deger = (string)jsondata[0].ToString();
-                //write string to file
-                App.Current.MainPage.DisplayAlert("Message", "Sayfaya Yönlendiriliyorsunuz", "Ok");
+                string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Data.json");
+                JsonDataWrite(fileName,jsondata);
+                var text = TextReplace(fileName);
+                var profile = new Profile()
+                {
+                    Message = text.Substring(9, 8),
+                    success = text.Substring(27, 4),
+                    name = text.Substring(42, 5),
+                    surname = text.Substring(58,11),
+                    city = text.Substring(77, 6),
+                    lat = 38.5002,
+                    lon = 27.7084
+                };
+                await App.Current.MainPage.DisplayAlert("Message", "Sayfaya Yönlendiriliyorsunuz", "Ok");
+                await App.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new MainPage()));
+                MessagingCenter.Send<Profile>(profile,"Names");
             }
+        }
+        public void JsonDataWrite(string file, string jsondata)
+        {
+            System.IO.File.WriteAllText(file, jsondata);
+        }
+        public string TextReplace(string filename)
+        {
+            string text = File.ReadAllText(filename);
+            text = text.Replace("\\", string.Empty);
+            text = text.Replace("'\'", string.Empty);
+            text = text.Replace("{", string.Empty);
+            text = text.Replace("}", string.Empty);
+            text = text.Replace(":", string.Empty);
+            text = text.Replace("data", string.Empty);
+            text = text.Replace("profile", string.Empty);
+            text = text.Replace("location", string.Empty);
+            text = text.Replace(",", string.Empty);
+            text = text.Replace('"', ' ');
+            text = text.Trim('"');
+            text = text.Trim();
+            return text;
         }
     }
 }

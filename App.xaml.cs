@@ -7,7 +7,7 @@ namespace DonemProje
         public App()
         {
             InitializeComponent();
-            MainPage = new LoginView(); /*NavigationPage(new MainPage()*/
+            MainPage = new LoginView();
         }
 
         protected override void OnStart()

@@ -9,17 +9,6 @@
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="Places.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Places.json" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <None Remove="Places.json" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />

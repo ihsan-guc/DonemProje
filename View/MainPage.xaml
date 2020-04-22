@@ -3,14 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DonemProje.View.MainPage" Title="İstekler" Padding="10"
              xmlns:local="clr-namespace:DonemProje.View">
-    <TableView Intent="Menu">
-        <TableRoot>
-            <TableSection>
-                <TextCell Text="Pins"
+    <StackLayout>
+        <Label FontSize="23" VerticalOptions="Center" HorizontalOptions="Center" x:Name="lblheaders"></Label>
+        <TableView Intent="Menu">
+            <TableRoot>
+                <TableSection>
+                    <TextCell Text="Pins"
                           Detail="Add a pin to a map."
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:MapsPin}" />
-            </TableSection>
-        </TableRoot>
-    </TableView>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </StackLayout>
 </ContentPage>

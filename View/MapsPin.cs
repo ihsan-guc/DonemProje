@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using DonemProje.Model;
+using System.Collections.Generic;
+using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
 namespace DonemProje.View
