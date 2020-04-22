@@ -4,7 +4,6 @@
              x:Class="DonemProje.View.LoginView" x:Name="loginView">
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="20" VerticalOptions="Center">
-            <ActivityIndicator Color="Red" IsVisible="{Binding IsVisible}" IsRunning="True"></ActivityIndicator>
             <Label Text="{Binding Error}" HorizontalOptions="Center" FontAttributes="Bold" FontSize="23" TextColor="Red"></Label>
             <Entry Text="{Binding UserName}" TextColor="Black" Placeholder="UserName"></Entry>
             <Entry Text="{Binding Password}" TextColor="Black" Placeholder="Password" IsPassword="True"></Entry>

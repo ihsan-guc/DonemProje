@@ -63,8 +63,8 @@ namespace DonemProje.ViewModel
         {
             var login = new Login()
             {
-                username = username,
-                password = password /*"mobiluygulamagelistirme",*/
+                username = "mobil",
+                password = "mobiluygulamagelistirme" /*"mobiluygulamagelistirme",*/
             };
             Uri u = new Uri("http://yusufozgul.com:8282/login");
             var json = JsonConvert.SerializeObject(login);
