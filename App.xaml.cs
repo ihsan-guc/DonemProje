@@ -1,4 +1,5 @@
 ﻿using DonemProje.View;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 namespace DonemProje
 {
@@ -7,7 +8,8 @@ namespace DonemProje
         public App()
         {
             InitializeComponent();
-            MainPage = new LoginView();
+            VersionTracking.Track();
+            MainPage = new AccelerometerPage();
         }
 
         protected override void OnStart()
