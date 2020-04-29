@@ -3,13 +3,9 @@ using DonemProje.View;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -22,6 +18,7 @@ namespace DonemProje.ViewModel
         {
             loginIn = new Command(LoginControl);
         }
+        public static Profile Profile;
         private string username;
         public string UserName
         {
@@ -92,9 +89,9 @@ namespace DonemProje.ViewModel
                     lat = 38.5002,
                     lon = 27.7084
                 };
+                Profile = profile;
                 await App.Current.MainPage.DisplayAlert("Message", "Sayfaya Yönlendiriliyorsunuz", "Ok");
                 await App.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new MainPage()));
-                MessagingCenter.Send<Profile>(profile,"Names");
             }
         }
         public void JsonDataWrite(string file, string jsondata)

@@ -1,4 +1,5 @@
 ﻿using DonemProje.Model;
+using DonemProje.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Windows.Input;
@@ -14,13 +15,8 @@ namespace DonemProje.View
         public MainPage()
         {
             InitializeComponent();
-            MessagingCenter.Unsubscribe<Profile>(this, "Names");
-            MessagingCenter.Subscribe<Profile>(this, "Names", (value) =>
-            {
-                lblheaders.TextColor = Color.Red;
-                lblheaders.Text = value.name + " " + value.surname;
-                MessagingCenter.Unsubscribe<Profile>(this, "Names");
-            });
+            lblheaders.Text = LoginViewModel.Profile.name + " " + LoginViewModel.Profile.surname;
+            lblheaders.TextColor = Color.Red;
             NavigateCommand = new Command<Type>(async (Type pageType) =>
             {
                 Page page = (Page)Activator.CreateInstance(pageType);
