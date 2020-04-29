@@ -15,3 +15,4 @@ C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netsta
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.csproj.CoreCompileInputs.cache
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\AccelerometerPage.xaml.g.cs
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\BatteryPage.xaml.g.cs

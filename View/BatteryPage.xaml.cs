@@ -11,6 +11,7 @@ namespace DonemProje.View
         {
             InitializeComponent();
             SetBackGround(Battery.ChargeLevel,Battery.State == BatteryState.Charging);
+            LabelBatteryPower.Text = Battery.PowerSource.ToString();
         }
         protected override void OnAppearing()
         {
@@ -24,13 +25,13 @@ namespace DonemProje.View
         }
         private void Battery_BatteryInfoChanged(object sender, BatteryInfoChangedEventArgs e)
         {
-            throw new System.NotImplementedException();
+            SetBackGround(e.ChargeLevel, e.State == BatteryState.Charging);
         }
         void SetBackGround(double level, bool charging)
         {
             Color? color = null;
 
-            var status = charging ? "Charging" : "Not charging";
+            var status = charging ? "Şarj Doluyor" : "Şarj Dolmuyor";
             if (level > .5f)
                 color = Color.Green.MultiplyAlpha(level);
             else if (level > .1f)

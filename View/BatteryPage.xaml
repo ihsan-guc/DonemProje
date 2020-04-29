@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Battery Page"
              x:Class="DonemProje.View.BatteryPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="LabelBatteryLevel" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontSize="23">
-            </Label>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label x:Name="LabelBatteryLevel" TextColor="Black" FontSize="23"/>
+            <Label x:Name="LabelBatteryPower" TextColor="Black" FontSize="23"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

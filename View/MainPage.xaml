@@ -15,9 +15,12 @@
                     <TextCell Text="Photo" Detail="Photo Video Take and Pick"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:PhotoView}"/>
-                    <TextCell Text="Photo" Detail="Photo Video Take and Pick"
+                    <TextCell Text="Accelerometer" Detail="Measuring Accelerometer"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:AccelerometerPage}"/>
+                    <TextCell Text="Charging" Detail="Charging Operations"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:BatteryPage}"/>
                 </TableSection>
             </TableRoot>
         </TableView>
