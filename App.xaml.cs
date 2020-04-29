@@ -9,7 +9,7 @@ namespace DonemProje
         {
             InitializeComponent();
             VersionTracking.Track();
-            MainPage = new AccelerometerPage();
+            MainPage = new LoginView();
         }
 
         protected override void OnStart()
