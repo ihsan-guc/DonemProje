@@ -12,7 +12,8 @@ C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netsta
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.csprojAssemblyReference.cache
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\PhotoView.xaml.g.cs
-C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.csproj.CoreCompileInputs.cache
-C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\AccelerometerPage.xaml.g.cs
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\BatteryPage.xaml.g.cs
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\gRPCPage.xaml.g.cs
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.csproj.CoreCompileInputs.cache
+C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\XamlC.stamp

@@ -21,6 +21,9 @@
                     <TextCell Text="Charging" Detail="Charging Operations"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:BatteryPage}"/>
+                    <TextCell Text="gRPC" Detail="gRPC Page"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:gRPCPage}"/>
                 </TableSection>
             </TableRoot>
         </TableView>
