@@ -5,10 +5,10 @@
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="20" VerticalOptions="Center">
             <Label Text="{Binding Error}" HorizontalOptions="Center" FontAttributes="Bold" FontSize="23" TextColor="Red"></Label>
-            <Entry Text="{Binding UserName}" TextColor="Black" Placeholder="UserName"></Entry>
-            <Entry Text="{Binding Password}" TextColor="Black" Placeholder="Password" IsPassword="True"></Entry>
+            <Entry Text="{Binding UserName}" FontSize="23" TextColor="White" Placeholder="UserName" PlaceholderColor="White"></Entry>
+            <Entry Text="{Binding Password}" FontSize="23" TextColor="White" Placeholder="Password" PlaceholderColor="White" IsPassword="True"></Entry>
             <Button Text="Giriş" Command="{Binding Path=BindingContext.LoginIn
-                ,Source={x:Reference loginView}}"></Button>
+                ,Source={x:Reference loginView}}" FontSize="23" FontAttributes="Bold"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

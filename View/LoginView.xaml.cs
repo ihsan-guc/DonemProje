@@ -10,6 +10,7 @@ namespace DonemProje.View
         public LoginView()
         {
             InitializeComponent();
+            BackgroundImageSource = "arkaplan2.png";
             BindingContext = new LoginViewModel();
         }
     }
