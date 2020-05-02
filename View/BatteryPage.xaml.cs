@@ -11,6 +11,8 @@ namespace DonemProje.View
         {
             InitializeComponent();
             SetBackGround(Battery.ChargeLevel,Battery.State == BatteryState.Charging);
+            LabelBatteryFull.Text = BatteryState.Full.ToString();
+            LabelBatteryFull.Text = BatteryState.NotPresent.ToString();
             LabelBatteryPower.Text = Battery.PowerSource.ToString();
         }
         protected override void OnAppearing()

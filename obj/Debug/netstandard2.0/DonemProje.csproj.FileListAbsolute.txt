@@ -9,7 +9,6 @@ C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netsta
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.dll
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\ref\DonemProje.dll
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.pdb
-C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\DonemProje.csprojAssemblyReference.cache
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\PhotoView.xaml.g.cs
 C:\Users\EysanGuc\source\repos\DonemProje\DonemProje\DonemProje\obj\Debug\netstandard2.0\View\AccelerometerPage.xaml.g.cs
