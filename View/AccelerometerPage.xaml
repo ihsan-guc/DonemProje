@@ -13,6 +13,7 @@
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="20">
             <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                <Label Text="Değer Görmek İçin Start Basın"></Label>
                 <Label Text="{Binding LabelX}"></Label>
                 <Label Text="{Binding LabelY}"></Label>
                 <Label Text="{Binding LabelZ}"></Label>
