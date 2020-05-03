@@ -7,14 +7,14 @@
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="Aqua"></Setter>
                 <Setter Property="BackgroundColor" Value="Black"></Setter>
-                <Setter Property="FontSize" Value="23"></Setter>
-                <Setter Property="FontAttributes" Value="Bold"></Setter>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <StackLayout Orientation="Vertical" Padding="10,0,10,0">
-        <Image x:Name="_img"></Image>
-        <Button Text="Take Photo" VerticalOptions="Center" Clicked="BtnTakePhoto_Clicked"></Button>
-        <Button Text="Pick Photo" VerticalOptions="Center" Clicked="BtnPickPhoto_Clicked"></Button>
-    </StackLayout>
+    <ScrollView Orientation="Vertical">
+        <StackLayout Padding="10,0,10,0">
+            <Image x:Name="_img"></Image>
+            <Button Text="Take Photo" VerticalOptions="Center" Clicked="BtnTakePhoto_Clicked"></Button>
+            <Button Text="Pick Photo" VerticalOptions="Center" Clicked="BtnPickPhoto_Clicked"></Button>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

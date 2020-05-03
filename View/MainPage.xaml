@@ -4,7 +4,7 @@
              x:Class="DonemProje.View.MainPage" Title="İstekler" Padding="10"
              xmlns:local="clr-namespace:DonemProje.View">
     <StackLayout>
-        <Label FontSize="23" VerticalOptions="Center" HorizontalOptions="Center" x:Name="lblheaders"></Label>
+        <Label VerticalOptions="Center" HorizontalOptions="Center" x:Name="lblheaders"></Label>
         <TableView Intent="Menu">
             <TableRoot>
                 <TableSection>

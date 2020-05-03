@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using DonemProje.ViewModel;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace DonemProje.View

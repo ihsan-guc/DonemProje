@@ -2,18 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Accelerometer" x:Name="accelerometerPage"
              x:Class="DonemProje.View.AccelerometerPage" BackgroundColor="#bbffc1">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style TargetType="Label">
-                <Setter Property="FontSize" Value="23"></Setter>
-                <Setter Property="TextColor" Value="Black"></Setter>
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="20">
             <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-                <Label Text="Değer Görmek İçin Start Basın"></Label>
+                <Label Text="Değer Görmek İçin Start Basın" TextColor="Red"></Label>
                 <Label Text="{Binding LabelX}"></Label>
                 <Label Text="{Binding LabelY}"></Label>
                 <Label Text="{Binding LabelZ}"></Label>
