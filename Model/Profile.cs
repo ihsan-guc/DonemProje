@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Xamarin.Forms.Maps;
-
-namespace DonemProje.Model
+﻿namespace DonemProje.Model
 {
     public class Profile
     {

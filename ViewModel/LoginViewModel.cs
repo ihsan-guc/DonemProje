@@ -23,13 +23,13 @@ namespace DonemProje.ViewModel
         public string UserName
         {
             get { return username; }
-            set { username = value; }
+            set { username = value; OnPropertyChanged(); }
         }
         private string password;
         public string Password
         {
             get { return password; }
-            set { password = value; }
+            set { password = value; OnPropertyChanged(); }
         }
         private ICommand loginIn;
         public ICommand LoginIn
@@ -41,7 +41,7 @@ namespace DonemProje.ViewModel
         public string Error
         {
             get { return error; }
-            set { error = value; OnpropertyChanged(); }
+            set { error = value; OnPropertyChanged(); }
         }
         static async Task<string> PostURI(Uri u, HttpContent c)
         {
@@ -77,14 +77,14 @@ namespace DonemProje.ViewModel
                 JObject Jsonparse = JObject.Parse(t.Result);
                 string jsondata = JsonConvert.SerializeObject(t.Result);
                 string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Data.json");
-                JsonDataWrite(fileName,jsondata);
+                JsonDataWrite(fileName, jsondata);
                 var text = TextReplace(fileName);
                 var profile = new Profile()
                 {
                     Message = text.Substring(9, 8),
                     success = text.Substring(27, 4),
                     name = text.Substring(42, 5),
-                    surname = text.Substring(58,11),
+                    surname = text.Substring(58, 11),
                     city = text.Substring(77, 6),
                     lat = 38.5002,
                     lon = 27.7084

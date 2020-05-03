@@ -1,17 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Accelerometer"
-             x:Class="DonemProje.View.AccelerometerPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Accelerometer" x:Name="accelerometerPage"
+             x:Class="DonemProje.View.AccelerometerPage" BackgroundColor="#bbffc1">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="23"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="20">
             <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-                <Label x:Name="LabelX" Text="Görmek için Başlatın" TextColor="Black" FontSize="23"></Label>
-                <Label x:Name="LabelY" Text="Görmek için Başlatın" TextColor="Black" FontSize="23"></Label>
-                <Label x:Name="LabelZ" Text="Görmek için Başlatın" TextColor="Black" FontSize="23"></Label>
+                <Label Text="{Binding LabelX}"></Label>
+                <Label Text="{Binding LabelY}"></Label>
+                <Label Text="{Binding LabelZ}"></Label>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Text="Start" x:Name="ButtonStart" Clicked="ButtonStart_Clicked"></Button>
-                <Button Text="Stop" x:Name="ButtonStop" Clicked="ButtonStop_Clicked"></Button>
+                <Button Text="Start" Command="{Binding Path=BindingContext.StartBtn,Source={x:Reference accelerometerPage}}" ></Button>
+                <Button Text="Stop"  Command="{Binding Path=BindingContext.StopBtn,Source={x:Reference accelerometerPage}}"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

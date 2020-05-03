@@ -1,7 +1,5 @@
-﻿using DonemProje.Model;
-using DonemProje.ViewModel;
+﻿using DonemProje.ViewModel;
 using System;
-using System.Collections.Generic;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
