@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="PhotoPage" x:Name="photoViewPage"
              x:Class="DonemProje.View.PhotoView">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="Aqua"></Setter>
                 <Setter Property="BackgroundColor" Value="Black"></Setter>
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ScrollView Orientation="Vertical">
         <StackLayout Padding="10,0,10,0">
-            <Image x:Name="_img"></Image>
-            <Button Text="Take Photo" VerticalOptions="Center" Clicked="BtnTakePhoto_Clicked"></Button>
-            <Button Text="Pick Photo" VerticalOptions="Center" Clicked="BtnPickPhoto_Clicked"></Button>
+            <Image  Source="{Binding _Img}"></Image>
+            <Button Text="Take Photo" Clicked="BtnTakePhoto_Clicked"></Button>
+            <Button Text="Pick Photo" Command="{Binding Path=BindingContext.PickPhoto,Source={x:Reference photoViewPage}}"></Button>
         </StackLayout>
     </ScrollView>
 </ContentPage>
