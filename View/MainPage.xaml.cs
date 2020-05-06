@@ -14,7 +14,6 @@ namespace DonemProje.View
         {
             InitializeComponent();
             lblheaders.Text = LoginViewModel.Profile.name + " " + LoginViewModel.Profile.surname;
-            lblheaders.TextColor = Color.Red;
             NavigateCommand = new Command<Type>(async (Type pageType) =>
             {
                 Page page = (Page)Activator.CreateInstance(pageType);
