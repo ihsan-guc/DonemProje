@@ -14,8 +14,8 @@
     <ScrollView Orientation="Vertical">
         <StackLayout Padding="10,0,10,0">
             <Image  Source="{Binding _Img}"></Image>
-            <Button Text="Take Photo" Clicked="BtnTakePhoto_Clicked"></Button>
-            <Button Text="Pick Photo" Command="{Binding Path=BindingContext.PickPhoto,Source={x:Reference photoViewPage}}"></Button>
+            <Button Text="Pick Photo" Command="{Binding Path=BindingContext.PickPhoto
+                ,Source={x:Reference photoViewPage}}"></Button>
         </StackLayout>
     </ScrollView>
 </ContentPage>

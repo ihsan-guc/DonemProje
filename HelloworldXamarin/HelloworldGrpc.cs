@@ -19,10 +19,6 @@ namespace DonemProje.HelloworldXamarin
                 "SayHello",
                 __Marshaller_HelloRequest,
                 __Marshaller_HelloReply);
-            public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
-            {
-                get { return global::DonemProje.HelloworldXamarin.Helloworld.HelloworldReflection.Descriptor.Services[0]; }
-            }
             public abstract partial class GreeterBase
             {
                 public virtual global::System.Threading.Tasks.Task<global::DonemProje.HelloworldXamarin.Helloworld.HelloReply> SayHello(global::DonemProje.HelloworldXamarin.Helloworld.HelloRequest request, grpc::ServerCallContext context)
@@ -36,12 +32,6 @@ namespace DonemProje.HelloworldXamarin
                 public GreeterClient(grpc::Channel channel) : base(channel)
                 {
                 }
-                public GreeterClient(grpc::CallInvoker callInvoker) : base(callInvoker)
-                {
-                }
-                protected GreeterClient() : base()
-                {
-                }
                 protected GreeterClient(ClientBaseConfiguration configuration) : base(configuration)
                 {
                 }
@@ -52,14 +42,6 @@ namespace DonemProje.HelloworldXamarin
                 public virtual global::DonemProje.HelloworldXamarin.Helloworld.HelloReply SayHello(global::DonemProje.HelloworldXamarin.Helloworld.HelloRequest request, grpc::CallOptions options)
                 {
                     return CallInvoker.BlockingUnaryCall(__Method_SayHello, null, options, request);
-                }
-                public virtual grpc::AsyncUnaryCall<global::DonemProje.HelloworldXamarin.Helloworld.HelloReply> SayHelloAsync(global::DonemProje.HelloworldXamarin.Helloworld.HelloRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
-                {
-                    return SayHelloAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-                }
-                public virtual grpc::AsyncUnaryCall<global::DonemProje.HelloworldXamarin.Helloworld.HelloReply> SayHelloAsync(global::DonemProje.HelloworldXamarin.Helloworld.HelloRequest request, grpc::CallOptions options)
-                {
-                    return CallInvoker.AsyncUnaryCall(__Method_SayHello, null, options, request);
                 }
                 protected override GreeterClient NewInstance(ClientBaseConfiguration configuration)
                 {

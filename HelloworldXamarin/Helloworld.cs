@@ -12,23 +12,6 @@ namespace DonemProje.HelloworldXamarin
                 get { return descriptor; }
             }
             private static pbr::FileDescriptor descriptor;
-            static HelloworldReflection()
-            {
-                byte[] descriptorData = global::System.Convert.FromBase64String(
-                    string.Concat(
-                      "ChBoZWxsb3dvcmxkLnByb3RvEgpoZWxsb3dvcmxkIhwKDEhlbGxvUmVxdWVz",
-                      "dBIMCgRuYW1lGAEgASgJIh0KCkhlbGxvUmVwbHkSDwoHbWVzc2FnZRgBIAEo",
-                      "CTJJCgdHcmVldGVyEj4KCFNheUhlbGxvEhguaGVsbG93b3JsZC5IZWxsb1Jl",
-                      "cXVlc3QaFi5oZWxsb3dvcmxkLkhlbGxvUmVwbHkiAEI2Chtpby5ncnBjLmV4",
-                      "YW1wbGVzLmhlbGxvd29ybGRCD0hlbGxvV29ybGRQcm90b1ABogIDSExXYgZw",
-                      "cm90bzM="));
-                descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-                    new pbr::FileDescriptor[] { },
-                    new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DonemProje.HelloworldXamarin.Helloworld.HelloRequest), global::DonemProje.HelloworldXamarin.Helloworld.HelloRequest.Parser, new[]{ "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DonemProje.HelloworldXamarin.Helloworld.HelloReply), global::DonemProje.HelloworldXamarin.Helloworld.HelloReply.Parser, new[]{ "Message" }, null, null, null)
-                    }));
-            }
         }
         public sealed partial class HelloRequest : pb::IMessage<HelloRequest>
         {
@@ -165,7 +148,6 @@ namespace DonemProje.HelloworldXamarin
                     }
                 }
             }
-
         }
         public sealed partial class HelloReply : pb::IMessage<HelloReply>
         {
@@ -284,7 +266,6 @@ namespace DonemProje.HelloworldXamarin
                     Message = other.Message;
                 }
             }
-
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public void MergeFrom(pb::CodedInputStream input)
             {

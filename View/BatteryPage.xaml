@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Battery Page"
-             x:Class="DonemProje.View.BatteryPage">
+             x:Class="DonemProje.View.BatteryPage" BackgroundColor="{Binding BackgroundColor}">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-            <Label x:Name="LabelBatteryLevel"/>
-            <Label x:Name="LabelBatteryFull" />
-            <Label x:Name="LabelBatteryPower"/>
+            <Label Text="{Binding LabelBatteryLevel}"/>
+            <Label Text="{Binding LabelBatteryFull }"/>
+            <Label Text="{Binding LabelBatteryPower}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
