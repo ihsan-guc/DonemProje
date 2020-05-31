@@ -11,7 +11,9 @@ namespace DonemProje.HelloworldXamarin
             {
                 get { return descriptor; }
             }
+#pragma warning disable CS0649 // Field 'Helloworld.HelloworldReflection.descriptor' is never assigned to, and will always have its default value null
             private static pbr::FileDescriptor descriptor;
+#pragma warning restore CS0649 // Field 'Helloworld.HelloworldReflection.descriptor' is never assigned to, and will always have its default value null
         }
         public sealed partial class HelloRequest : pb::IMessage<HelloRequest>
         {

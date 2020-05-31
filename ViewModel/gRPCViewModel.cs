@@ -16,20 +16,20 @@ namespace DonemProje.ViewModel
             BtnText = "İstek Atın";
         }
         private ICommand btngRPC;
-		public ICommand BtngRPC
-		{
-			get { return btngRPC; }
-			set { btngRPC = value; }
-		}
-		private string btnText;
+        public ICommand BtngRPC
+        {
+            get { return btngRPC; }
+            set { btngRPC = value; }
+        }
+        private string btnText;
 
-		public string BtnText
-		{
-			get { return btnText; }
-			set { btnText = value; OnPropertyChanged(); }
-		}
-		public void gRPCRequest(object e)
-		{
+        public string BtnText
+        {
+            get { return btnText; }
+            set { btnText = value; OnPropertyChanged(); }
+        }
+        public void gRPCRequest(object e)
+        {
             SayHello();
         }
         private void SayHello()
